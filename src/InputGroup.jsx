@@ -1,8 +1,8 @@
-export default function InputGroup({title}) {
+export default function InputGroup({title, ...props}) {
     return (
         <div>
             <label>{title}</label>
-            <input/>
+            <input type="number" min="0" {...props} />
         </div>
     )
 }
