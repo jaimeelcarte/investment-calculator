@@ -1,7 +1,10 @@
 function App() {
   return (
-    <h1>React Investment Calculator</h1>
-  )
+    <div id="header">
+      <img src="../public/investment-calculator-logo.png" />
+      <h1>React Investment Calculator</h1>
+    </div>
+  );
 }
 
-export default App
+export default App;
