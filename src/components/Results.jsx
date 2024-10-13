@@ -1,4 +1,6 @@
-export default function ResultsTable({ results }) {
+import { calculateInvestmentResults, formatter } from "../util/investment";
+
+export default function Results() {
   return (
     <table id="result">
       <thead>
@@ -10,7 +12,7 @@ export default function ResultsTable({ results }) {
           <th>Invested Capital</th>
         </tr>
       </thead>
-      <tbody>
+      {/* <tbody>
         {results.map((row) => (
           <tr>
             <td>{row.year}</td>
@@ -20,7 +22,7 @@ export default function ResultsTable({ results }) {
             <td>{row.investedCapital}</td>
           </tr>
         ))}
-      </tbody>
+      </tbody> */}
     </table>
   );
 }
