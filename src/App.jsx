@@ -41,11 +41,27 @@ const INITIAL_RESULTS_TABLE = [
 ];
 
 function App() {
+  const [userInput, setUserInput] = useState({
+    initialInvestment: 10000,
+    annualInvestment: 1200,
+    expectedReturn: 6,
+    duration: 10,
+  });
+
+  function handleChange(inputIdentifier, newValue) {
+    setUserInput((prevUserInput) => {
+      return {
+        ...prevUserInput,
+        [inputIdentifier]: newValue,
+      };
+    });
+  }
+
   return (
     <>
       <Header />
-      <UserInput />
-      <ResultsTable results={INITIAL_RESULTS_TABLE} />
+      <UserInput userInput={userInput} onChange={handleChange} />
+      <ResultsTable results={data} />
     </>
   );
 }
