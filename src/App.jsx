@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Header from "./components/Header";
 import UserInput from "./components/UserInput";
-import ResultsTable from "./components/Results";
+import Results from "./components/Results";
 
 function App() {
   const [userInput, setUserInput] = useState({
