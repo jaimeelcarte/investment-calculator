@@ -1,44 +1,7 @@
 import React, { useState } from "react";
-import UserInput from "./UserInput";
-import ResultsTable from "./ResultsTable";
-
-const INITIAL_RESULTS_TABLE = [
-  {
-    year: 1,
-    investmentValue: 0,
-    interest: 0,
-    totalInterest: 0,
-    investedCapital: 0,
-  },
-  {
-    year: 1,
-    investmentValue: 0,
-    interest: 0,
-    totalInterest: 0,
-    investedCapital: 0,
-  },
-  {
-    year: 1,
-    investmentValue: 0,
-    interest: 0,
-    totalInterest: 0,
-    investedCapital: 0,
-  },
-  {
-    year: 1,
-    investmentValue: 0,
-    interest: 0,
-    totalInterest: 0,
-    investedCapital: 0,
-  },
-  {
-    year: 1,
-    investmentValue: 0,
-    interest: 0,
-    totalInterest: 0,
-    investedCapital: 0,
-  },
-];
+import Header from "./components/Header";
+import UserInput from "./components/UserInput";
+import ResultsTable from "./components/Results";
 
 function App() {
   const [userInput, setUserInput] = useState({
